@@ -1,8 +1,6 @@
 #!/bin/bash
 #utilisation: bash select.sh 'Sexe,Année de naissance' < test.csv
 
-
-
 count=0
 linenb=0
 un=1
@@ -16,10 +14,8 @@ selected=$1
 shift
 IFS=',' read -ra NAMES2 <<< "$selected"   
 
-
 while read line
     do
-
 
 if [ $linenb -eq $zero ] # si on passe la premiere ligne
 then
@@ -42,10 +38,6 @@ then
 	i=0
 	done
 fi
-
-
-
-
 
 	STR=$line
 	IFS=',' read -ra NAMES <<< "$STR"   
